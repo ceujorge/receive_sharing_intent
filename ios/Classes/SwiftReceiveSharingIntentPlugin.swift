@@ -7,6 +7,7 @@ public let kUserDefaultsKey = "ShareKey"
 public let kUserDefaultsMessageKey = "ShareMessageKey"
 public let kAppGroupIdKey = "AppGroupId"
 
+@MainActor
 public class SwiftReceiveSharingIntentPlugin: NSObject, FlutterPlugin, FlutterStreamHandler {
     static let kMessagesChannel = "receive_sharing_intent/messages"
     static let kEventsChannelMedia = "receive_sharing_intent/events-media"
